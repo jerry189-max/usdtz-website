@@ -11,7 +11,6 @@ Official website for **USDT.z Token**.
 - **Symbol:** USDT.z  
 - **Total Supply:** 27,000,000,000  
 - **Contract Address:** [View on BscScan](https://bscscan.com/token/0xcd162d0058a56E949F3777438616782AE62D5B18)  
-
 ---
 
 ## 🔹 Community
