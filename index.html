@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT.z Token</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 30px 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      margin: 5px 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Common card styling for all sections */
+    .card {
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #222;
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+
+    /* Specific backgrounds */
+    .card.token-details {
+      background-color: #ffeb3b; /* Yellow background */
+    }
+
+    .card.features-card {
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    }
+
+    .card.community-card {
+      background: #fff;
+    }
+
+    /* Key Features list styling */
+    .features-card ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .features-card ul li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      list-style: none;
+    }
+
+    .features-card ul li span {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .features-card ul li::before {
+      content: "✅";
+      margin-right: 10px;
+      color: #007bff;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="USDT.z Logo">
+    <h1>Tether USD Bridged ZED20</h1>
+    <p>Official Coin Information</p>
+  </header>
+
+  <div class="container">
+    <!-- Token Details -->
+    <div class="card token-details">
+      <h2>USDT.z Details</h2>
+      <p><strong>Name:</strong> Tether USD Bridged ZED20ss</p>
+      <p><strong>Symbol:</strong> USDT.z</p>
+      <p><strong>Total Supply:</strong> 27,000,000,000</p>
+      <p><strong>Contract Address:</strong><br>
+        <a href="https://bscscan.com/token/0xE22e627BedcDea1BE7FB00Be6dD40690d2EE9DC1" target="_blank">
+          0xcd162d0058a56E949F3777438616782AE62D5B18
+        </a>
+      </p>
+    </div>
+
+    <!-- Key Features -->
+    <div class="card features-card">
+      <h2>Key Features</h2>
+      <ul>
+        <li><span>ERC20 Standard:</span> Fully compatible with wallets and exchanges</li>
+        <li><span>Decimals:</span> 18</li>
+        <li><span>Initial Supply:</span> 27,000,000,000</li>
+        <li><span>Secure Math:</span> SafeMath library prevents overflows</li>
+        <li><span>Mint & Burn:</span> Tokens can be minted or burned by contract rules</li>
+        <li><span>Allowance Management:</span> Approve, transferFrom, increase/decrease allowance</li>
+        <li><span>Event Logging:</span> Tracks all transfers and approvals</li>
+      </ul>
+    </div>
+
+    <!-- Community -->
+    <div class="card community-card">
+      <h2>Community</h2>
+      <p>Join our community and stay updated:</p>
+      <a href="#" class="button">Telegram</a>
+      <a href="https://x.com/jerrymr22340" target="_blank" class="button">Twitter</a>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 USDT.z Token. All Rights Reserved.
+  </footer>
+</body>
+</html>
