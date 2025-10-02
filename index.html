@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>USDT.z Token</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+  <!-- Icons (Font Awesome) -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,47 +18,58 @@
       padding: 0;
       background: #f5f5f5;
       color: #333;
-      text-align: center;
     }
 
     header {
       background: #222;
       color: #fff;
+      text-align: center;
       padding: 30px 20px;
     }
 
     header img {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     header h1 {
       margin: 5px 0;
-      font-size: 2.2em;
+      font-size: 2em;
     }
 
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
+    nav {
+      background: #007bff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
-    /* Common card styling for all sections */
     .card {
       border-radius: 12px;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       margin-bottom: 20px;
-      text-align: left;
+      background: #fff;
       transition: transform 0.3s;
     }
 
@@ -66,112 +84,98 @@
       margin-bottom: 15px;
     }
 
-    /* Specific backgrounds */
     .card.token-details {
-      background-color: #ffeb3b; /* Yellow background */
+      background-color: #ffeb3b;
     }
 
     .card.features-card {
       background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
     }
 
-    .card.community-card {
-      background: #fff;
+    .card.roadmap-card {
+      background: linear-gradient(135deg, #ffe0b2, #ffcc80);
     }
 
-    /* Key Features list styling */
-    .features-card ul {
+    .features-card ul, .roadmap-card ul {
       padding-left: 20px;
-      margin: 0;
     }
 
-    .features-card ul li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      list-style: none;
+    .features-card li, .roadmap-card li {
+      margin-bottom: 10px;
     }
 
-    .features-card ul li span {
-      font-weight: bold;
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
       color: #007bff;
+      font-size: 1.5em;
+      transition: color 0.3s;
     }
 
-    .features-card ul li::before {
-      content: "✅";
-      margin-right: 10px;
-      color: #007bff;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      background: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
-
-    a.button:hover {
-      background: #0056b3;
+    .social-icons a:hover {
+      color: #0056b3;
     }
 
     footer {
       background: #222;
       color: #fff;
+      text-align: center;
       padding: 15px;
+      margin-top: 20px;
       font-size: 0.9em;
+    }
+
+    /* Mobile-friendly */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <img src="logo.jpg" alt="USDT.z Logo">
+    <img src="logo.svg" alt="USDT.z Logo">
     <h1>Tether USD Bridged ZED20</h1>
     <p>Official Coin Information</p>
   </header>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="#details">Details</a>
+    <a href="#features">Features</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#community">Community</a>
+  </nav>
+
   <div class="container">
     <!-- Token Details -->
-    <div class="card token-details">
+    <div class="card token-details" id="details">
       <h2>USDT.z Details</h2>
-      <p><strong>Name:</strong> Tether USD Bridged ZED20ss</p>
+      <p><strong>Name:</strong> Tether USD Bridged ZED20</p>
       <p><strong>Symbol:</strong> USDT.z</p>
       <p><strong>Total Supply:</strong> 27,000,000,000</p>
       <p><strong>Contract Address:</strong><br>
-        <a href="https://bscscan.com/token/0xE22e627BedcDea1BE7FB00Be6dD40690d2EE9DC1" target="_blank">
+        <a href="https://bscscan.com/token/0xcd162d0058a56E949F3777438616782AE62D5B18" target="_blank">
           0xcd162d0058a56E949F3777438616782AE62D5B18
         </a>
       </p>
     </div>
 
-    <!-- Key Features -->
-    <div class="card features-card">
+    <!-- Features -->
+    <div class="card features-card" id="features">
       <h2>Key Features</h2>
       <ul>
-        <li><span>ERC20 Standard:</span> Fully compatible with wallets and exchanges</li>
-        <li><span>Decimals:</span> 18</li>
-        <li><span>Initial Supply:</span> 27,000,000,000</li>
-        <li><span>Secure Math:</span> SafeMath library prevents overflows</li>
-        <li><span>Mint & Burn:</span> Tokens can be minted or burned by contract rules</li>
-        <li><span>Allowance Management:</span> Approve, transferFrom, increase/decrease allowance</li>
-        <li><span>Event Logging:</span> Tracks all transfers and approvals</li>
-      </ul>
-    </div>
-
-    <!-- Community -->
-    <div class="card community-card">
-      <h2>Community</h2>
-      <p>Join our community and stay updated:</p>
-      <a href="#" class="button">Telegram</a>
-      <a href="https://x.com/jerrymr22340" target="_blank" class="button">Twitter</a>
-
-    </div>
-  </div>
-
-  <footer>
-    © 2025 USDT.z Token. All Rights Reserved.
-  </footer>
-</body>
-</html>
+        <li><strong>BEP20 Standard:</strong> Fully compatible with wallets and exchanges</li>
+        <li><strong>Decimals:</strong> 18</li>
+        <li><strong>Initial Supply:</strong> 27,000,000,000</li>
+        <li><strong>Secure Math:</strong> SafeMath library prevents overflows</li>
+        <li><strong>Mint & Burn:</strong> Tokens can be minted or burned by co
